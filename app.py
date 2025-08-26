@@ -1,17 +1,20 @@
 import streamlit as st
 from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain.schema.runnable import RunnableSequence , RunnableParallel
 from streamlit_chat import message
 from langchain_core.messages import HumanMessage , SystemMessage , AIMessage
 from langchain.output_parsers import StructuredOutputParser
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 
 def chat_friendly():
     st.set_page_config(page_title='ChatBot' , page_icon="🤖")
     st.title('Personal Chat Friendly AI💬...')
-    model = ChatOllama(model="gemma3:1b", temperature=1)
+    model = ChatGroq(model="llama-3.1-8b-instant",groq_api_key = os.getenv("GROQ_API_KEY ") ,temperature=0.8)
     
     if "messages" not in st.session_state:
         st.session_state.messages = [

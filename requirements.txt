@@ -4,3 +4,4 @@ langchain-groq
 python-dotenv
 streamlit
 streamlit-chat
+python-dotenv
