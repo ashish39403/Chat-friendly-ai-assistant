@@ -14,3 +14,4 @@ It provides a simple chat UI where you can talk to an AI powered by Gemma 3 (1B)
 ⚡ Real-time thinking spinner while AI generates response
 
 🎨 Lightweight, runs directly on Streamlit
+app_link = https://chat-friendly-ai-assistant-nhbczhhm72b7vbporczu9q.streamlit.app/
