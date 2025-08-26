@@ -3,3 +3,4 @@ langchain-ollama
 langchain-groq
 python-dotenv
 streamlit
+streamlit-chat
