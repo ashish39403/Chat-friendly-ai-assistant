@@ -2,4 +2,4 @@ langchain
 langchain-ollama
 langchain-groq
 python-dotenv
-stremalit
+streamlit
